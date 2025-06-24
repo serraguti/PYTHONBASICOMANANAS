@@ -21,6 +21,10 @@ else:
     ultimoPunto = email.rfind(".")
     #Recuperamos el dominio a partir de la posicion
     #del ultimo punto
+    #paco@gmail.com
+    #email[4:] -> @gmail.com
+    #email[0] -> p
+    #email[1] -> a
     dominio = email[ultimoPunto + 1:]
     if (len(dominio) >= 2 and len(dominio) <= 3):
         print("Email correcto")
