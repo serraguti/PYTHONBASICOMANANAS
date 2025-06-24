@@ -6,9 +6,8 @@ print("Introduzca un numero")
 numero = int(input())
 if (numero > 0):
     print(f"Numero {numero} positivo")
+elif (numero < 0):
+    print(f"Número {numero} negativo")
 else:
-    if (numero < 0):
-        print(f"Número {numero} negativo")
-    else:
-        print(f"El número es cero")
+    print(f"El número es cero")
 print("Fin de programa")
