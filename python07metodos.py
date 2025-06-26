@@ -9,15 +9,31 @@ def saludar(nombre):
     print(f"Hola en Python {nombre}")
 def despedirse(nombre, dia):
     print(f"Hasta luego {nombre} en el día {dia}")
+#METODO DE ACCION
+def mostrarMenu():
+    print("Seleccione una opcion")
+    print("1.- Convertir mayusculas")
+    print("2.- Convertir minusculas")
+#METODOS RETURN
+def convertirMayusculas(texto):
+    #TODO NUESTRO CODIGO
+    return texto.upper()
+
+def convertirMinusculas(texto):
+    return texto.lower()
 #---------------------------------------
 #CODIGO PRINCIPAL DE NUESTRO PROGRAMA MAIN
 print("Ejemplo de métodos")
-saludar("Paco")
-despedirse("Paco", "Martes")
+mostrarMenu()
+#EN LA LLAMADA DEBEMOS CAPTURAR EL VALOR DEVUELTO
+respuesta = convertirMayusculas("juernes de pyThON")
+print(respuesta)
+# saludar("Paco")
+# despedirse("Paco", "Martes")
 #saludar("Paco")
 #LLAMADA A LOS METODOS
-primerMetodo()
-segundoMetodo()
-primerMetodo()
+# primerMetodo()
+# segundoMetodo()
+# primerMetodo()
 print("Fin de programa")
 
