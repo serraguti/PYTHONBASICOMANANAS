@@ -11,10 +11,19 @@ def mostrarMenu():
     print("3.- Introduzca nuevos numeros")
     print("Seleccione una opcion")
 
+def getComprobarNumero():
+    print("Introduzca un numero")
+    aux = input()
+    while (aux.isdigit() == False):
+        print("Esto no es un numero")
+        print("Introduzca un numero")
+        aux = input()
+    num = int(aux)
+    return num
 #-----------------PRINCIPAL-------------------
 print("Calculadora métodos")
-numero1 = int(input("Introduzca numero 1: "))
-numero2 = int(input("Introduzca numero 2: "))
+numero1 = getComprobarNumero()
+numero2 = getComprobarNumero()
 opcion = 1
 while (opcion != 0):
     mostrarMenu()
@@ -25,4 +34,7 @@ while (opcion != 0):
     elif (opcion == 2):
         multi = multiplicarNumeros(numero1, numero2)
         print(f"{numero1} * {numero2} = {multi}")
+    elif (opcion == 3):
+        numero1 = getComprobarNumero()
+        numero2 = getComprobarNumero()
 print("Fin de programa")
