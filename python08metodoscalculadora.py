@@ -1,3 +1,6 @@
+#el acceso a las librerías se escribe al inicio
+from math import pow
+
 def sumarNumeros(num1, num2):
     return num1 + num2
 
@@ -24,17 +27,19 @@ def getComprobarNumero():
 print("Calculadora métodos")
 numero1 = getComprobarNumero()
 numero2 = getComprobarNumero()
-opcion = 1
-while (opcion != 0):
-    mostrarMenu()
-    opcion = int(input())
-    if (opcion == 1):
-        suma = sumarNumeros(numero1, numero2)
-        print(f"La suma de {numero1} y {numero2} es {suma}")
-    elif (opcion == 2):
-        multi = multiplicarNumeros(numero1, numero2)
-        print(f"{numero1} * {numero2} = {multi}")
-    elif (opcion == 3):
-        numero1 = getComprobarNumero()
-        numero2 = getComprobarNumero()
+potencia = pow(numero1, numero2)
+print(potencia)
+# opcion = 1
+# while (opcion != 0):
+#     mostrarMenu()
+#     opcion = int(input())
+#     if (opcion == 1):
+#         suma = sumarNumeros(numero1, numero2)
+#         print(f"La suma de {numero1} y {numero2} es {suma}")
+#     elif (opcion == 2):
+#         multi = multiplicarNumeros(numero1, numero2)
+#         print(f"{numero1} * {numero2} = {multi}")
+#     elif (opcion == 3):
+#         numero1 = getComprobarNumero()
+#         numero2 = getComprobarNumero()
 print("Fin de programa")
