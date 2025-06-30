@@ -4,8 +4,8 @@ from models.director import Director
 
 print("Utilizando clases Persona")
 empleado = Empleado()
-empleado.nombre = "Empleado "
-empleado.apellidos = "del mes"
+empleado.nombre = "Marcos "
+empleado.apellidos = "Lopez Ramos"
 print(empleado)
 
 dire = Director()
