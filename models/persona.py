@@ -7,10 +7,10 @@ class Persona:
     # edad = 0
     # pais = ""
     def __init__(self):
-        #tenemos la posibilidad de crear propiedades privadas
-        #las propiedades privadas solamente se pueden utilizar dentro
-        #de la clase Persona y se definen mediante dos guiones bajos:
-        #__propiedadPrivada
+        # tenemos la posibilidad de crear propiedades privadas
+        # las propiedades privadas solamente se pueden utilizar dentro
+        # de la clase Persona y se definen mediante dos guiones bajos:
+        # __propiedadPrivada
         self.__datoPrivado = "Esto no lo vas a ver Python..."
         self.nombre = ""
         self.apellidos = ""

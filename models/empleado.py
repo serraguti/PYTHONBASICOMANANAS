@@ -8,6 +8,9 @@ class Empleado(Persona):
         super().__init__()
         self.salario = 1700
 
-    #PODEMOS CREAR METODOS QUE NO TENGA UNA PERSONA
+    # #PODEMOS CREAR METODOS QUE NO TENGA UNA PERSONA
     def getVacaciones(self):
-        return 22
+        return 32
+    
+    def __str__(self):
+        return self.nombre + " " + self.apellidos
